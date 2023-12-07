@@ -23,7 +23,7 @@ There are two functions in the `API_Sending.py` file. The `mailSender` is for se
 The `sender.py` file is the main loop. It is responsible for listening to any query emails.    
 Normally, the query emails contain a number that indicates the number of Martian Solar Days after the Curiosity had landed. If there is not a valid number, then the `getPic` function will produce a random number as the number.     
 When a new email is received, the `email_response` function will read the sender of the query email. Then, this address plus the valid number (if any) will be passed to the `mailSender` function (if the number is not valid, -1 will    
-be sent to inform the `getPic` function to select a solar day randomly. The `getPic` function will download the first picture among all pictures with the query solar day, and the `mailSender` will send the picture to the querier.  
+be sent to inform the `getPic` function to select a solar day randomly. The `getPic` function will download a random picture among all pictures with the query solar day, and the `mailSender` will send the picture to the querier.  
 To save space, after the picture is sent, it will be deleted immediately.    
 
 
