@@ -32,4 +32,6 @@ To save space, after the picture is sent, it will be deleted immediately.
 * Send the message:     
 ![Logo](./demoSend.png)      
 * Result:
-![Logo](./demoRec.png)  
+![Logo](./demoRec.png)
+* New result format (updated on Dec 7)            
+![logo](./demo_3.png)
