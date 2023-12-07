@@ -4,7 +4,7 @@
               
 **Method to Use**    
 1. Download the code and install all packages if needed  
-2. Run `sender.py`
+2. Run `main.py`
 3. Run `ngrok http 5000` at terminal
 4. Go to `https://app.sendgrid.com/settings/parse`
 5. Click on the "Add HOST & URL" button
@@ -20,7 +20,7 @@ For more info about configuring the account configuration, please read the follo
          
 **Thought on Implementation**    
 There are two functions in the `API_Sending.py` file. The `mailSender` is for sending the email back to the querier, and the `getPic` is for downloading the NASA picture.        
-The `sender.py` file is the main loop. It is responsible for listening to any query emails.    
+The `main.py` file is the main loop. It is responsible for listening to any query emails.    
 Normally, the query emails contain a number that indicates the number of Martian Solar Days after the Curiosity had landed. If there is not a valid number, then the `getPic` function will produce a random number as the number.     
 When a new email is received, the `email_response` function will read the sender of the query email. Then, this address plus the valid number (if any) will be passed to the `mailSender` function (if the number is not valid, -1 will    
 be sent to inform the `getPic` function to select a solar day randomly. The `getPic` function will download a random picture among all pictures with the query solar day, and the `mailSender` will send the picture to the querier.  
