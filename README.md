@@ -2,7 +2,7 @@
   :email: 
   :arrow_right:
   :framed_picture:      
-  This program receives emails from users and uses the email-sending service provided by SendGrid to send back a picture of the Mars rover from NASA.:milky_way:         
+  This program receives emails from users and uses the email-sending service provided by SendGrid to send back a picture of the Mars rover from NASA :milky_way:             
 
               
 **Method to Use :computer:**    
