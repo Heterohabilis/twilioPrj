@@ -1,4 +1,4 @@
-## MLH GLOBAL HACK WEEK PRJ 😋
+## MLH GLOBAL HACK WEEK PRJ :yum:
   This program receives emails from users and uses the email-sending service provided by SendGrid to send back a picture of the Mars rover from NASA.      
 
               
