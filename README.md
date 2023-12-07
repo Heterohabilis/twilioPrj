@@ -5,7 +5,7 @@
   This program receives emails from users and uses the email-sending service provided by SendGrid to send back a picture of the Mars rover from NASA.      
 
               
-**Method to Use**    
+**Method to Use :computer:**    
 1. Download the code and install all packages if needed  
 2. Run `main.py`
 3. Run `ngrok http 5000` at terminal
@@ -21,7 +21,7 @@ For more info about configuring the account configuration, please read the follo
 
 
          
-**Thought on Implementation**    
+**Thought on Implementation :thinking:**    
 There are two functions in the `API_Sending.py` file. The `mailSender` is for sending the email back to the querier, and the `getPic` is for downloading the NASA picture.        
 The `main.py` file is the main loop. It is responsible for listening to any query emails.    
 Normally, the query emails contain a number that indicates the number of Martian Solar Days after the Curiosity had landed. If there is not a valid number, then the `getPic` function will produce a random number as the number.     
@@ -31,7 +31,7 @@ To save space, after the picture is sent, it will be deleted immediately.
 
 
               
-**Examples of Using**  
+**Examples of Using :yum:**  
 * Send the message:     
 ![Logo](./demoSend.png)      
 * Result:
