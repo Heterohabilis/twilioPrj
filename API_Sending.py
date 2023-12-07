@@ -30,7 +30,7 @@ def mailSender(fromEM, target,sol):
         )
     try:
         # send it
-        sg = sendgrid.SendGridAPIClient('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') # place your Sendgrid key here
+        sg = sendgrid.SendGridAPIClient('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') # place your Sendgrid key here
         # if successfully get the photo, delete it after sending
         if sentence[0] == "H":
             os.remove("pic.png")
