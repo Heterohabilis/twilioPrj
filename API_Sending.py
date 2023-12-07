@@ -11,12 +11,12 @@ from sendgrid.helpers.mail import Mail
 
 
 def mailSender(fromEM, target,sol):
-    sentence=getPic(sol) # call the picture getter
+    sentence, sol=getPic(sol) # call the picture getter
     message = Mail(
         from_email=fromEM,
         to_emails=target,
         subject='Your Picture',
-        html_content='<strong>'+sentence+'</strong>') # message (success/failure)
+        html_content='<strong>'+sentence+'        Your query sol='+str(sol)+'</strong>') # message (success/failure)
     if sentence[0] == "H": # if succeeded
         with open('pic.png', 'rb') as f:
             data = f.read()
@@ -30,7 +30,7 @@ def mailSender(fromEM, target,sol):
         )
     try:
         # send it
-        sg = sendgrid.SendGridAPIClient('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') # place your Sendgrid key here
+        sg = sendgrid.SendGridAPIClient('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')
         # if successfully get the photo, delete it after sending
         if sentence[0] == "H":
             os.remove("pic.png")
@@ -54,9 +54,14 @@ def getPic(sol): # picture getter
         queryInd=random.randint(0,len(photoSet)-1)
         photo=photoSet[int(queryInd)] # randomly select a photo
         picUrl=photo['img_src']   # get its link
-        #print(picUrl)
+        picSol=photo['sol']
+        print(sol)
         urllib.request.urlretrieve(picUrl, 'pic.png') # save the picture
-        return "Here is your pic, catch it!" # message if succeeded
+        return ("Here is your pic, catch it!", picSol) # message if succeeded
     except:
-        return "Busy...try again later plz :(" # message if failed
+        return ("Busy...try again later plz :(", 'err')
+
+
+        # message if failed
+
 
