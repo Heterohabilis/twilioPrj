@@ -5,7 +5,8 @@
   This program receives emails from users and uses the email-sending service provided by SendGrid to send back a picture of the Mars rover from NASA :milky_way:             
 
               
-**Method to Use :computer:**    
+**Method to Use :computer:**     
+(This tutorial is for python; for java, download the Java files and run them. However, the settings of the account dashboard is always the same.)
 1. Download the code and install all packages if needed  
 2. Run `main.py`
 3. Run `ngrok http 5000` at terminal
