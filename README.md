@@ -6,7 +6,7 @@
 
               
 **Method to Use :computer:**     
-(This tutorial is for python; for java, download the Java files and run them. However, the settings of the account dashboard is always the same.)
+(This tutorial is for python; for java, download the .java files and run them. However, the settings of the account dashboard is always the same.)
 1. Download the code and install all packages if needed  
 2. Run `main.py`
 3. Run `ngrok http 5000` at terminal
